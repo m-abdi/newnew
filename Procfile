@@ -1,0 +1,1 @@
+worker: gunicorn reza.wsgi:application
