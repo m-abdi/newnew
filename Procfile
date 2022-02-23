@@ -1,1 +1,1 @@
-worker: gunicorn reza.wsgi:application
+web:gunicorn reza.wsgi:application
