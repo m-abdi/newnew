@@ -1,0 +1,79 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "Hezareh";
+  src: url("./Heza/Si47ash Hezareh.woff2") format("woff2"),
+    url("./Heza/Si47ash Hezareh.woff") format("woff"),
+    url("./Heza/Si47ash Hezareh.ttf") format("truetype"),
+    url("./Heza/Si47ash Hezareh.otf") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hezareh";
+  src: url("./Heza/Si47ash Hezareh Bold.woff2") format("woff2"),
+    url("./Heza/Si47ash Hezareh Bold.woff") format("woff"),
+    url("./Heza/Si47ash Hezareh Bold.ttf") format("truetype"),
+    url("./Heza/Si47ash Hezareh Bold.otf") format("embedded-opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+header{
+  font-size: 10pt;
+}
+body {
+  font-family: Hezareh;
+  font-size: 12pt;
+}
+.greenBackground{
+  background-color:rgb(71, 158, 154)
+}
+#darkBackground{
+  background-color: rgb(60, 60, 146);
+  color: aliceblue;
+}
+nav ul{
+  list-style-type: none;
+  color:white;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.centred{
+  width: 700px;
+  margin: auto auto;
+}
+img{
+  display:block;
+  width: 500px;
+  margin: auto auto;
+}
+header{
+  border-radius: 0 0 50px 50px;
+}
+#nameBackground {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  inline-size: 500px;
+  block-size: 500px;
+  margin: auto auto;
+  background-image: url(images/text-background.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  background-position: center;
+  opacity: 0.8;
+}

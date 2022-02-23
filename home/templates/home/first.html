@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.____.</title>
+    <link rel="stylesheet" href="{% static 'home/first.css' %}">
+</head>
+<body>
+    <header class="green center">
+        <nav>
+            <ul>
+                <li>صفحه اصلی</li>
+                <li>درباره من</li>
+                <li>رزومه</li>
+                <li>تماس با من</li>
+            </ul>
+        </nav>
+        <img src="" alt="">
+    </header>
+    <main>
+        <section class="first">
+           <h1> {{ name }} </h1>
+           <H3> {{ title}} </H3>
+           
+        </section>
+        <!-- first -->
+        <section>
+            
+            <img src="{% static 'home/451964.jpg' %}" alt="">
+            <!-- ABOUT ME -->
+            <section id="name"><h3>about me</h3>
+            <P> {{ about_me }}</P>
+            </section>
+            <!-- اطلاعات ارتباطی -->
+            <section class="aboutme">
+                <h3>اطلاعات ارتباطی</h3>
+                <a href="">
+                    <button>دانلود رزومه</button>
+                </a>
+                <p>{{ name }}</p>
+                <p>{{city}}</p>
+                <p>phone:{{phone}}</p>
+                <a href="mailto:r.babaei0918@gmail.com">{{ gmail }} </a>
+
+            </section>
+
+
+        </section>
+        <!-- تحصیلات و ... -->
+        <section>
+            <!-- تحصیلات -->
+            <section>
+                <h3>تحصیلات</h3>
+                <p> {{knowledge}}  </p>
+            </section>
+            <!-- سابقه کاری -->
+            <section>
+                <h3>سابقه کاری</h3>
+                <p>nothing</p>
+            </section>  
+            <!-- مهارت ها -->
+            <section>
+                <h3>مهارت ها</h3>
+                <ul>
+                    
+                    <li>python</li>
+                    <li>django</li>
+                </ul>
+            </section>
+        </section>
+        <!-- ارتباط -->
+        <section>
+            <h3>همین الان بهم پیام بده!</h3>
+            <form class="form" >
+                <label>نام:
+                    <input type="text">
+                </label>
+                <label>ایمیل:
+                    <input type="email">
+                </label>
+                <label>موضوع:
+                    <input type="text">
+                </label>
+                <label>پیام:
+                    <textarea></textarea>
+                </label>
+                <label>رمز:
+                    <input type="password">
+                </label>
+                <a href="./resum">
+                    <button>ارسال</button>
+                </a>
+            </form>
+        </section>
+        <!-- شبکه های مجازی -->
+        <section>
+            <h2>ما را در شبکه های اجتماعی دنبال کنید:)</h2>
+            <a href=" https://www.instagram.com/{{ instagram}} ">
+                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium muirtl-1l05muc" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="InstagramIcon" style="width:50px;height:50px"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg>
+            </a>
+        </section>
+        
+   
+    </main>
+</body>
+</html>

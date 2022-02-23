@@ -1,0 +1,75 @@
+/* li {
+    color: red;
+} */
+
+html {
+    box-sizing: border-box;
+  }
+  
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  }
+  
+@font-face {
+    font-family: "Hezareh";
+    src: url("./Heza/Si47ash Hezareh.woff2") format("woff2"),
+      url("./Heza/Si47ash Hezareh.woff") format("woff"),
+      url("./Heza/Si47ash Hezareh.ttf") format("truetype"),
+      url("./Heza/Si47ash Hezareh.otf") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: "Hezareh";
+    src: url("./Heza/Si47ash Hezareh Bold.woff2") format("woff2"),
+      url("./Heza/Si47ash Hezareh Bold.woff") format("woff"),
+      url("./Heza/Si47ash Hezareh Bold.ttf") format("truetype"),
+      url("./Heza/Si47ash Hezareh Bold.otf") format("embedded-opentype");
+    font-weight: bold;
+    font-style: normal;
+  }
+body {
+    font-family: Hezareh;
+    font-size: 12pt;
+  }
+.first{
+    background-color: rgb(120, 250, 120)
+}
+.aboutme{
+    background-color: rgb(120, 250, 120);
+}
+.form{
+    background-color: black;
+    color: white;
+}
+header{
+    border-radius: 0 0 50px 50px;
+}
+img{
+    display: block;
+    width: 400px;
+    margin: auto auto;
+}
+.green{
+    background-color: rgb(120, 250, 120);
+}
+.center{
+    width: 100%;
+    margin: auto auto;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+
+}
+#name{
+    background-image: url(./text-background.svg);
+    background-repeat: no-repeat;
+}
